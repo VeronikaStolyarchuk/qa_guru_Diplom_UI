@@ -83,7 +83,8 @@ Allure Report используется для отображения резул�
 В TestOps отображаются тест-кейсы, а также запуски со статусом выполнения в реальном времени. Статистика выполнения кейсов отображается на дашбордах, есть возможность настройки кастомных графиков.
 
 <p align="center">
-<img title="Testops-suites" src="media/screens/AllureTestOps.png"><br>
+<img title="Testops" src="media/screens/AllureTestOps.png"><br>
+<img title="Testops-suites" src="media/screens/Allure-Results.png"><br>
 </p>
 
 ---
