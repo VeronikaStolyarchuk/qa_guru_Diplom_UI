@@ -80,7 +80,7 @@ Allure Report используется для отображения резул�
 
 ## <img width="30" style="vertical-align:middle" title="Allure TestOps" src="media/logo/allureTO.svg"> Система управления тест-кейсами [TestOps](https://allure.qa.guru/launch/56408)
 
-Система TestOps предназначена для управления тест‑кейсами.Функционал включает отображение тест‑кейсов и информации о запусках с актуализируемыми в реальном времени статусами.
+Система TestOps предназначена для управления тест‑кейсами. Функционал включает отображение тест‑кейсов и информации о запусках с актуализируемыми в реальном времени статусами.
 
 <p align="center">
 <img title="Testops" src="media/screens/AllureTestOps.png"><br>
