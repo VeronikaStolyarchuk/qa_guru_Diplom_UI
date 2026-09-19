@@ -67,4 +67,4 @@ clean test
 <p align="center">
 <img title="Jenkins Build" src="media/screens/jenkins.png">
 </p>
-После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
+После завершения сборки в блоке «История сборок» рядом с номером сборки отображаются значки Allure Report и Allure TestOps. При нажатии на значок Allure Report открывается HTML‑отчёт по тестам, а при клике на Allure TestOps — страница с тестовой документацией.
