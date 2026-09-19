@@ -174,7 +174,7 @@ public class RussianBouquetWebTests extends BaseTest {
                 .clickLoginField()
                 .setEmailLogin(testData.userEmail)
                 .clickLogInButton()
-                .assertPasswordFieldValidationMessage();
+                .assertPasswordFieldValidationMessage(testData.ERROR_TEXT_OF_EMPTY_PASSWORD);
     }
 }
 

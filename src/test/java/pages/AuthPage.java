@@ -33,11 +33,11 @@ public class AuthPage {
     }
 
     @Step("Проверить сообщение валидации при пустом поле пароля")
-    public void assertPasswordFieldValidationMessage() {
+    public void assertPasswordFieldValidationMessage(String value) {
         String validationMessage = executeJavaScript(
                 "return arguments[0].validationMessage;",
                 emptyPasswordField
         );
-        assertThat(validationMessage).isNotBlank().contains("Заполните это поле.");
+        assertThat(validationMessage).isNotBlank().contains(value);
     }
 }

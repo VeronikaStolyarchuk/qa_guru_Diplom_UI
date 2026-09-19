@@ -17,7 +17,7 @@ public class CartPage {
     private final ElementsCollection cartItems = $$(".cart-product");
     private final SelenideElement removeButton = $(".cart-product__btn");
     private final SelenideElement confirmationMessage = $(".tingle-modal-box__content");
-    private final SelenideElement confirmationButton = $(".trb-btn_success");
+    private final SelenideElement confirmationButton = $(".rb-btn_success");
     private final SelenideElement emptyCartText = $(".cart__empty");
 
     @Step("Выбрать категорию «Букеты»")
