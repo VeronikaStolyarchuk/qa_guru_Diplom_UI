@@ -77,3 +77,13 @@ Allure Report используется для отображения резул�
 <img title="Allure Overview" src="media/screens/allure-report.png">
 <img title="Allure Overview" src="media/screens/allure.png">
 </p>
+
+## <img width="30" style="vertical-align:middle" title="Allure TestOps" src="media/logo/allureTO.svg"> Система управления тест-кейсами [TestOps](https://allure.qa.guru/launch/56408)
+
+В TestOps отображаются тест-кейсы, а также запуски со статусом выполнения в реальном времени. Статистика выполнения кейсов отображается на дашбордах, есть возможность настройки кастомных графиков.
+
+<p align="center">
+<img title="Testops-suites" src="media/screens/AllureTestOps.png"><br>
+</p>
+
+---
