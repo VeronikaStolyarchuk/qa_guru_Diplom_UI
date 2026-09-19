@@ -89,7 +89,7 @@ Allure Report используется для отображения резул�
 
 ---
 
-### <img width="30" style="vertical-align:middle" title="Selenoid" src="images/logo/selenoid.svg"> Видео выполнения тестов
+### <img width="30" style="vertical-align:middle" title="Selenoid" src="media/logo/selenoid.svg"> Видео выполнения тестов
 В отчетах Allure для каждого теста прикреплен видео-скриншот прохождения теста.
 
 <p align="center">
