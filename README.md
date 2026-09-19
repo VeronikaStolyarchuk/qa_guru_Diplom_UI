@@ -58,3 +58,13 @@ clean test
 -DbaseUrl=$BASE_URL
 -Dheadless=$HEADLESS
 ```
+
+<a id="сборка-в-jenkins"></a>
+
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/jenkins.svg"> [Сборка в Jenkins](https://jenkins.qa.guru/job/41_VeronikaStolyarchuk_guru-qa_DiplomUI/)
+
+Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+<p align="center">
+<img title="Jenkins Build" src="media/screens/jenkins.png">
+</p>
+После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
