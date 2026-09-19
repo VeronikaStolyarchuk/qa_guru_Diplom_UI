@@ -30,10 +30,19 @@ public class BaseTest {
     @BeforeAll
     static void setupConfig(){
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion");
         Configuration.browserSize = System.getProperty("browserResolution", "1920x1080");
-        Configuration.headless = Boolean.parseBoolean(System.getProperty("headless", "true"));
+        Configuration.headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
         Configuration.baseUrl = System.getProperty("baseUrl","https://rus-buket.ru");
+
+        String browserVersion = System.getProperty("browserVersion");
+        if (browserVersion != null && !browserVersion.isBlank()) {
+            Configuration.browserVersion = browserVersion;
+        }
+
+        String remoteUrl = System.getProperty("remoteUrl");
+        if (remoteUrl != null && !remoteUrl.isBlank()) {
+            Configuration.remote = remoteUrl;
+        }
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -41,12 +50,7 @@ public class BaseTest {
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = "https://" +
-                System.getProperty("remoteBrowserUrlLogin") +
-                ":" +
-                System.getProperty("remoteBrowserUrlPassword") +
-                "@" +
-                System.getProperty("remoteBrowserUrl", "selenoid.qa.guru/wd/hub");
+
     }
 
     @AfterEach
