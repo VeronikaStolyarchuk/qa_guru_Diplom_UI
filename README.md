@@ -42,3 +42,19 @@ CI/CD-пайплайн развёрнут в Jenkins; результаты пр�
 - Выбор города доставки и отображение выбранного города.
 - Удаление товара из корзины.
 - Валидация полей: некорректный номер телефона в форме обратной связи, пустой пароль при авторизации.
+
+## Запуск автотестов:
+
+### Локальный запуск:
+```
+gradle clean test
+```
+### Удалённый запуск через Jenkins:
+```
+clean test
+-Dbrowser=$BROWSER
+-DbrowserVersion=$BROWSER_VERSION
+-DbrowserSize=$BROWSER_SIZE
+-DbaseUrl=$BASE_URL
+-Dheadless=$HEADLESS
+```
