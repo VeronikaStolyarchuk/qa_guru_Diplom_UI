@@ -22,3 +22,6 @@
 <a href="https://www.jenkins.io/"><img src="media/logo/jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 <a href="https://www.atlassian.com/ru/software/jira"><img src="media/logo/jira.svg" width="50" height="50"  alt="Atlassian Jira"/></a>
 </p>
+
+Автотесты реализованы на Java с применением Selenide и паттерна Page Object. Сборка проекта — Gradle, запуск тестов — на базе JUnit 5. Для сокращения шаблонного кода используются аннотации Lombok.
+CI/CD-пайплайн развёрнут в Jenkins; результаты прогонов визуализируются в Allure Report, а критические статусы автоматически отправляются в Telegram. Предусмотрены интеграции с Allure TestOps и Jira для управления дефектами и тестовой документацией.
