@@ -72,6 +72,8 @@ clean test
 ____
 <a id="allureReport"></a>
 ## <img width="30" style="vertical-align:middle" title="Allure Report" src="media/logo/allure.svg"> </a> Пример <a target="_blank" href="https://jenkins.qa.guru/job/41_VeronikaStolyarchuk_guru-qa_DiplomUI/12/allure/"> Allure-отчета </a>
+Allure Report используется для отображения результатов выполнения тестов, шагов тестирования и вложений.
 <p align="center">
+<img title="Allure Overview" src="media/screens/allure-report.png">
 <img title="Allure Overview" src="media/screens/Allure-Results.png">
 </p>
