@@ -14,18 +14,17 @@ import java.util.Map;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest {
-
-    @BeforeEach
-    void addListener() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-    }
-
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
     CartPage cartPage = new CartPage();
     QuickOrderPage quickOrderPage = new QuickOrderPage();
     AuthPage authPage = new AuthPage();
     TestData testData = new TestData();
+
+    @BeforeEach
+    void addListener() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+    }
 
     @BeforeAll
     static void setupConfig(){
