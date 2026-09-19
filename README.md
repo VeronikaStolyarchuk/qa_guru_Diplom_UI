@@ -75,5 +75,5 @@ ____
 Allure Report используется для отображения результатов выполнения тестов, шагов тестирования и вложений.
 <p align="center">
 <img title="Allure Overview" src="media/screens/allure-report.png">
-<img title="Allure Overview" src="media/screens/Allure-Results.png">
+<img title="Allure Overview" src="media/screens/allure.png">
 </p>
