@@ -17,7 +17,7 @@ public class CartPage {
     private final ElementsCollection cartItems = $$(".cart-product");
     private final SelenideElement removeButton = $(".cart-product__btn");
     private final SelenideElement confirmationMessage = $(".tingle-modal-box__content");
-    private final SelenideElement confirmationButton = $("[href='/ocheckout']");
+    private final SelenideElement confirmationButton = $(".tingle-modal--visible .rb-btn_success");
     private final SelenideElement emptyCartText = $(".cart__empty");
 
     @Step("Выбрать категорию «Букеты»")
@@ -64,7 +64,7 @@ public class CartPage {
 
     @Step("Подтвердить удаление товара")
     public CartPage clickRemoveButton() {
-        confirmationButton.click();
+        confirmationButton.shouldBe(visible).click();
         return this;
     }
 
