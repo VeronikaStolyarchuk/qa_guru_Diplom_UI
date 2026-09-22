@@ -42,3 +42,59 @@ CI/CD-пайплайн развёрнут в Jenkins; результаты пр�
 - Выбор города доставки и отображение выбранного города.
 - Удаление товара из корзины.
 - Валидация полей: некорректный номер телефона в форме обратной связи, пустой пароль при авторизации.
+
+## Запуск автотестов:
+
+### Локальный запуск:
+```
+gradle clean test
+```
+### Удалённый запуск через Jenkins:
+```
+clean test
+-Dbrowser=$BROWSER
+-DbrowserVersion=$BROWSER_VERSION
+-DbrowserSize=$BROWSER_SIZE
+-DbaseUrl=$BASE_URL
+-Dheadless=$HEADLESS
+```
+
+<a id="сборка-в-jenkins"></a>
+
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/jenkins.svg"> [Сборка в Jenkins](https://jenkins.qa.guru/job/41_VeronikaStolyarchuk_guru-qa_DiplomUI/)
+
+Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+<p align="center">
+<img title="Jenkins Build" src="media/screens/jenkins.png">
+</p>
+После завершения сборки в блоке «История сборок» рядом с номером сборки отображаются значки Allure Report и Allure TestOps. При нажатии на значок Allure Report открывается отчёт по тестам, а при клике на Allure TestOps — страница с тестовой документацией.
+
+____
+<a id="allureReport"></a>
+## <img width="30" style="vertical-align:middle" title="Allure Report" src="media/logo/allure.svg"> </a> Пример <a target="_blank" href="https://jenkins.qa.guru/job/41_VeronikaStolyarchuk_guru-qa_DiplomUI/12/allure/"> Allure-отчета </a>
+Allure Report используется для отображения результатов выполнения тестов, шагов тестирования и вложений.
+<p align="center">
+<img title="Allure Overview" src="media/screens/allure-report.png">
+<img title="Allure Overview" src="media/screens/allure.png">
+</p>
+
+## <img width="30" style="vertical-align:middle" title="Allure TestOps" src="media/logo/allureTO.svg"> Система управления тест-кейсами [TestOps](https://allure.qa.guru/launch/56408)
+
+Система TestOps предназначена для управления тест‑кейсами. Функционал включает отображение тест‑кейсов и информацию о запусках с актуальными статусами.
+
+<p align="center">
+<img title="Testops" src="media/screens/AllureTestOps.png"><br>
+<img title="Testops-suites" src="media/screens/Allure-Results.png"><br>
+</p>
+
+---
+
+### <img width="30" style="vertical-align:middle" title="Selenoid" src="media/logo/selenoid.svg"> Видео выполнения тестов
+В отчетах Allure для каждого теста прикреплен видео-скриншот прохождения теста.
+
+<p align="center">
+  <img src="media/screens/Video.gif" width="800">
+  </img>
+</p>
+
+---
