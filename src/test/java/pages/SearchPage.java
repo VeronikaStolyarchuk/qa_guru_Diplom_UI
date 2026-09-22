@@ -24,6 +24,6 @@ public class SearchPage {
     @Step("Проверить, что описание первого найденного товара содержит текст: {value}")
     public void verifyResultMatches(String value){
         searchResultCards.first().click();
-        descriptionSection.shouldHave(Condition.text(value));
+        descriptionSection.shouldBe(Condition.visible).shouldHave(Condition.text(value));
     }
 }
