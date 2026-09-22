@@ -44,7 +44,6 @@ public class RussianBouquetWebTests extends BaseTest {
     void headerAfterLanguageChangeTest() {
         mainPage
                 .openPage()
-                .acceptCookies()
                 .selectLanguage()
                 .verifyHeaderItemsInEnglish();
     }
@@ -63,7 +62,7 @@ public class RussianBouquetWebTests extends BaseTest {
     }
 
     @ParameterizedTest(name = "Поиск товара: {0}")
-    @ValueSource(strings = {"Лилии", "Альстромерии", "Ирисы"})
+    @ValueSource(strings = {"Лилии", "Каллы", "Ирисы"})
     @Tag("smoke")
     @Tag("search")
     @Severity(SeverityLevel.CRITICAL)
@@ -98,7 +97,6 @@ public class RussianBouquetWebTests extends BaseTest {
     void addProductToCartTest() {
         mainPage
                 .openPage()
-                .acceptCookies()
                 .openCatalog();
         cartPage
                 .selectBouquetsCategory()
@@ -115,7 +113,6 @@ public class RussianBouquetWebTests extends BaseTest {
     void removeProductFromCartTest() {
         mainPage
                 .openPage()
-                .acceptCookies()
                 .openCatalog();
         cartPage
                 .selectBouquetsCategory()
@@ -168,8 +165,7 @@ public class RussianBouquetWebTests extends BaseTest {
     @DisplayName("Авторизация с пустым паролем")
     void loginWithEmptyPasswordTest() {
         mainPage
-                .openPage()
-                .acceptCookies();
+                .openPage();
         authPage
                 .clickLoginField()
                 .setEmailLogin(testData.userEmail)

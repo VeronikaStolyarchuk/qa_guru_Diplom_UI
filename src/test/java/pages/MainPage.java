@@ -36,7 +36,7 @@ public class MainPage {
 
     @Step("Принять куки")
     public MainPage acceptCookies() {
-        cookiesAcceptButton.click();
+        cookiesAcceptButton.shouldBe(visible).click();
         return this;
     }
     @Step("Проверить пункты главного меню на русском языке")
