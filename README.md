@@ -88,7 +88,7 @@ Allure Report используется для отображения резул�
 </p>
 
 ---
-## <img width="30" style="vertical-align:middle" title="Allure TestOps" src="media/logo/telegram.svg"> Система управления тест-кейсами [Telegram](https://allure.qa.guru/launch/56408)
+## <img width="30" style="vertical-align:middle" title="Allure TestOps" src="media/logo/telegram.svg"> Получение уведомлений в Telegram с использованием бота
 
 Система TestOps предназначена для управления тест‑кейсами. Функционал включает отображение тест‑кейсов и информацию о запусках с актуальными статусами.
 
