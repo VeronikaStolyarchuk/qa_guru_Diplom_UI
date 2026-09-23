@@ -88,7 +88,7 @@ Allure Report используется для отображения резул�
 </p>
 
 ---
-## <img width="30" style="vertical-align:middle" title="Allure TestOps" src="media/logo/telegram.svg"> Получение уведомлений в Telegram с использованием бота
+## <img width="30" style="vertical-align:middle" title="Telegram" src="media/logo/telegram.svg"> Получение уведомлений в Telegram с использованием бота
 
 После сборки бот в Telegram автоматически отправляет в целевой чат отчёт о результатах прогона тестов.
 
