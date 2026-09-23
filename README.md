@@ -90,7 +90,7 @@ Allure Report используется для отображения резул�
 ---
 ## <img width="30" style="vertical-align:middle" title="Allure TestOps" src="media/logo/telegram.svg"> Получение уведомлений в Telegram с использованием бота
 
-Система TestOps предназначена для управления тест‑кейсами. Функционал включает отображение тест‑кейсов и информацию о запусках с актуальными статусами.
+После сборки бот в Telegram автоматически отправляет в целевой чат отчёт о результатах прогона тестов.
 
 <p align="center">
 <img title="Telegram" src="media/screens/telegram.png"><br>
